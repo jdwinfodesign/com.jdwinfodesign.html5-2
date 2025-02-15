@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="dita-ot/plugin.rnc" type="application/relax-ng-compact-syntax"?>
+<plugin id="com.jdwinfodesign.html5-2">
+	<require plugin="org.dita.html5"/>
+	<transtype name="jdwinfodesignHtml5-2" desc="JDWinfodesign HTML5-2"/>
+	<feature extension="ant.import" file="build_jdwinfodesignHtml5-2.xml"/>
+	<feature extension="dita.conductor.html5.param" file="params.xml"/>
+</plugin>

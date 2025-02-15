@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div>
+  <!-- BOOTSTRAP JAVASCRIPT (AND DEPENDENCIES) GO HERE-->
+  <script src="../js/jquery-3.6.0.min.js"/>
+  <script src="../js/bootstrap.bundle.js"/>
+  <script src="../js/imom-print.js"/> 
+</div>

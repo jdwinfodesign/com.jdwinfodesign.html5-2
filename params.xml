@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<params xmlns:if="ant:if">
+  <param name="xslJSroot" expression="${args.jsroot}" if:set="args.jsroot"/>
+  <param name="xslJSpath" expression="${args.jspath}" if:set="args.jspath"/>
+
+    <!-- Source directory of custom JS -->
+<!--  <property name="args.jsroot" location="${dita.plugin.com.jdwinfodesign.html5.dir}/js"/>-->
+  <!-- Destination directory of custom JS -->
+<!--  <property name="args.jspath" value="${output.dir}/js"/>-->
+
+</params>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:dita="http://dita-ot.sourceforge.net" 
+  xmlns:if="ant:if" 
+  xmlns:unless="ant:unless" name="dita2jdwHtml5-2">
+
+  <target name="dita2jdwinfodesignHtml5-2.init">
+    <!-- Source directory of jdw logo and other includes -->
+    <property name="include.dir" 
+      location="${dita.plugin.com.jdwinfodesign.html5-2.dir}/include"/>
+    <property name="args.xsl" location="${dita.plugin.com.jdwinfodesign.html5-2.dir}/xsl/dita2html5.xsl"/>
+    <!-- =============================== -->
+  </target>
+  
+  <!-- note the call to our custom preprocess2 target -->
+  <target name="dita2jdwinfodesignHtml5-2" 
+          depends="dita2jdwinfodesignHtml5-2.init, 
+                   html5.init, 
+                   build-init, 
+                   
+                   preprocess2.jdwinfodesign,
+                   
+                   html5.topic, 
+                   html5.map,
+                   html5.css">
+  </target>
+  <!-- ,
+
+                   html5.topic, 
+                   html5.map,
+                   html5.css -->
+</project>
